@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 650px) {
+  .chat {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.chat main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  color: black;
+  padding: 5px;
+}
+.msg-user {
+  align-self: end;
+  background-color: orange;
+  border-radius: 5px 5px 0px 5px;
+  padding: 2px;
+}
+
+.user-info img {
+  width: 40px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
